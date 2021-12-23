@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "worker-telegram-ping",
+  "version": "1.0.0",
+  "description": "ServiceWorker to monitor websites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,css,json,md}'"
+  },
+  "author": "max-lt <https://github.com/max-lt>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
