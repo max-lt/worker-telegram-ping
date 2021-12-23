@@ -61,12 +61,13 @@ async function getText(date: number, key: string, response: Pick<Response, 'ok' 
       return null;
     }
 
-    const downtime = fancyTimeFormat((date - parseInt(prev)) / 1000);
     await kv.delete(key);
+
+    const downtime = fancyTimeFormat((date - parseInt(prev)) / 1000);
     return `✅ ${key} is up. It was down for ${downtime}`;
-  } 
-  
-  // Still down no need to remind it. 
+  }
+
+  // Still down no need to remind it.
   if (prev) {
     return null;
   }
